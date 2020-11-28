@@ -1,0 +1,77 @@
+#gameBoard{
+      position: absolute;
+      top:0;
+      right: 30%;
+  		width: 600px;
+  		height: 200px;
+  		border:5px solid black;
+      background-color: yellow;
+  	}
+
+  	#character{
+  		width: 30px;
+  		height: 70px;
+      border:2px solid black;
+  		position: relative;
+      background-color: green;
+  		top: 125px;
+  		left:5px;
+    }
+    .animate{
+      animation:jump 500ms ;
+      border-radius: 20px;
+    }
+    .lose{
+      background-color: red;
+    }
+    @keyframes jump{
+      0%{top: 125px;}
+      30%{top: 40px;}
+      70%{top: 40px;}
+      100%{top: 125px;}
+    }
+  	#block{
+  		width:20px;
+  		height:20px;
+      border:2px solid black;
+  		background-color: blue;
+  		position:relative;
+  		top:100px;
+  		left:580px;
+  	}
+    .blockSlide{
+        animation: block 1s infinite linear;
+    }
+  	@keyframes block{
+  		0%{left:550px;}
+  		100%{left:-0px;}
+  	}
+    .srt{
+      position:absolute;
+      top: 40%;
+      right: 50%;
+      width:100px;
+      height:30px;
+      background-color: blue;
+      color: yellow;
+    }
+    .rpl{
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      width:100px;
+      height:30px;
+      background-color: blue;
+      color: yellow;
+    }
+    #jp{
+      position: absolute;
+      top:35%;
+      right:70%;
+      width:70px;
+      height: 30px;
+      border-radius: 20px;
+      background-color: green;
+      border:3px solid black;
+      outline: none;
+    }
